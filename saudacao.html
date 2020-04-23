@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang=“pt-br”>
+
+<head>
+    <title>Curso de Javascript</title>
+    <meta charset=“UTF-8”>
+    <script>
+        function cumprimento() {
+            var data = new Date();
+            hora = data.getHours();
+            if ((hora >= 6) && (hora <= 12)) {
+                alert("Bom dia");
+            } else if ((hora > 12) && (hora < 18)) {
+                alert("Boa tarde");
+            } else if (hora >= 18) {
+                alert("Boa noite");
+            } else {
+                alert("Boa madrugada");
+            }
+        }
+        function msg1() {
+            alert("Você clicou no botão");
+        }
+        function msg2() {
+            alert("Cursos passou sobre a imagem");
+        }
+    </script>
+</head>
+
+<body onload="cumprimento()">
+    <input type="button" value="Clique-me" onclick="msg1()">
+    <br>
+    <img src="C:\Users\Usuario\Documents\GitHub\Eventos\arquivos\iconeuna.png" alt="Falha no carregamento"
+        onmouseover="msg2()">
+</body>
+
+</html>
